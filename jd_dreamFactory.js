@@ -11,10 +11,12 @@
 ============Quantumultx===============
 [task_local]
 #京喜工厂
-10 * * * * jd_dreamFactory.js, tag=京喜工厂, img-url=https://github.com/58xinian/icon/raw/master/jdgc.png, enabled=true
+// 10 * * * * jd_dreamFactory.js, tag=京喜工厂, img-url=https://github.com/58xinian/icon/raw/master/jdgc.png, enabled=true
+10 * * * * jd_dreamFactory.js, tag=京喜工厂, img-url=https://github.com/58xinian/icon/raw/master/jdgc.png, enabled=false
 
 ================Loon==============
 [Script]
+// cron "20 1-20/2 * * *" script-path=jd_dreamFactory.js,tag=京喜工厂
 cron "10 * * * *" script-path=jd_dreamFactory.js,tag=京喜工厂
 
 ===============Surge=================
