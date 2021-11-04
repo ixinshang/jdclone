@@ -183,7 +183,9 @@ async function joyReward() {
 		var llChange500 = true;
 		var llSuccess = false;
 		llError = false;
-		for (let j = 0; j <= 14; j++) {
+//		for (let j = 0; j <= 14; j++) {
+// 测试修改为尝试兑换10次
+		for (let j = 0; j <= 9; j++) {		
 			if (llSuccess) {
 				console.log(`兑换成功，跳出循环...\n`);
 				break;
