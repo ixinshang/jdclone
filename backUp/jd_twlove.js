@@ -2,7 +2,8 @@
 const $ = new Env('柠檬特物Z简爱');
 const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
 
-const randomCount = $.isNode() ? 20 : 5;
+const randomCount = $.isNode() ? 0 : 0;
+// const randomCount = $.isNode() ? 20 : 5;
 const notify = $.isNode() ? require('./sendNotify') : '';
 let merge = {}
 let codeList = []
