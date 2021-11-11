@@ -25,8 +25,7 @@ const $ = new Env('东东乐园');
 //Node.js用户请在jdCookie.js处填写京东ck;
 const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
 
-const randomCount = $.isNode() ? 0 : 0;
-// const randomCount = $.isNode() ? 20 : 5;
+const randomCount = $.isNode() ? 20 : 5;
 const notify = $.isNode() ? require('./sendNotify') : '';
 let merge = {}
 let codeList = []
