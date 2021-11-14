@@ -655,7 +655,8 @@ function readShareCode() {
       } catch (e) {
         $.logErr(e, resp)
       } finally {
-        resolve(data);
+        resolve(null);
+//        resolve(data);
       }
     })
     await $.wait(10000);
