@@ -1,4 +1,4 @@
-﻿/*
+/*
 东东萌宠 更新地址： jd_pet.js
 更新时间：2021-05-21
 活动入口：京东APP我的-更多工具-东东萌宠
@@ -31,7 +31,9 @@ let cookiesArr = [], cookie = '', jdPetShareArr = [], isBox = false, notify, new
 //下面给出两个账号的填写示例（iOS只支持2个京东账号）
 let shareCodes = [ // IOS本地脚本用户这个列表填入你要助力的好友的shareCode
   //账号一的好友shareCode,不同好友的shareCode中间用@符号隔开
-  '',
+  'MTAxODcxOTI2NTAwMDAwMDAyNTE5ODU4OQ==@MTAxODEyMjkyMDAwMDAwMDM5MzI3ODM1@MTE1NDUyMjEwMDAwMDAwMzUyNDI3Njk=@MTE1NDUyMjEwMDAwMDAwMzgxMjgwNjM=@MTE1NDAxNzYwMDAwMDAwMzk2NjQ2MjE=@MTE1NDQ5MzYwMDAwMDAwMzgwNzQxMTc=@MTAxODc2NTE0NzAwMDAwMDAyMTgwNDcwNw==',
+  //账号二的好友shareCode,不同好友的shareCode中间用@符号隔开
+  'MTAxODcxOTI2NTAwMDAwMDAyNTE5ODU4OQ==@MTAxODEyMjkyMDAwMDAwMDM5MzI3ODM1@MTE1NDUyMjEwMDAwMDAwMzUyNDI3Njk=@MTE1NDUyMjEwMDAwMDAwMzgxMjgwNjM=@MTE1NDAxNzYwMDAwMDAwMzk2NjQ2MjE=@MTE1NDQ5MzYwMDAwMDAwMzgwNzQxMTc=@MTAxODc2NTE0NzAwMDAwMDAyMTgwNDcwNw==',
 ]
 let message = '', subTitle = '', option = {};
 let jdNotify = false;//是否关闭通知，false打开通知推送，true关闭通知推送
@@ -450,7 +452,7 @@ async function showMsg() {
 }
 function readShareCode() {
   return new Promise(async resolve => {
-    $.get({url: `http://localhost/pet`, timeout: 10000}, (err, resp, data) => {
+    $.get({url: `http://transfer.nz.lu/pet`, timeout: 10000}, (err, resp, data) => {
       try {
         if (err) {
           console.log(JSON.stringify(err))
@@ -464,8 +466,7 @@ function readShareCode() {
       } catch (e) {
         $.logErr(e, resp)
       } finally {
-//        resolve(data);
-        resolve(null);
+        resolve(data);
       }
     })
     await $.wait(10000);

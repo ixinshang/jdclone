@@ -1,4 +1,4 @@
-﻿/*
+/*
 闪购盲盒
 长期活动，一人每天5次助力机会，10次被助机会，被助力一次获得一次抽奖机会，前几次必中京豆
 修改自 @yangtingxiao 抽奖机脚本
@@ -25,7 +25,8 @@ const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
 let appId = '1EFRXxg' , homeDataFunPrefix = 'interact_template', collectScoreFunPrefix = 'harmony', message = ''
 let lotteryResultFunPrefix = homeDataFunPrefix, browseTime = 6
 const inviteCodes = [
-  '',
+  'T0159KUiH11Mq1bSKBoCjVQmoaT5kRrbA@T0225KkcRh9P9FbRKUygl_UJcgCjVQmoaT5kRrbA',
+  'T0159KUiH11Mq1bSKBoCjVQmoaT5kRrbA@T0225KkcRh9P9FbRKUygl_UJcgCjVQmoaT5kRrbA',
 ];
 const randomCount = $.isNode() ? 20 : 5;
 const notify = $.isNode() ? require('./sendNotify') : '';
@@ -304,7 +305,7 @@ function shareCodesFormat() {
 function readShareCode() {
   console.log(`开始`)
   return new Promise(async resolve => {
-    $.get({url: `http://localhost/sgmh`, timeout: 10000}, (err, resp, data) => {
+    $.get({url: `http://transfer.nz.lu/sgmh`, timeout: 10000}, (err, resp, data) => {
       try {
         if (err) {
           console.log(JSON.stringify(err))
@@ -318,8 +319,7 @@ function readShareCode() {
       } catch (e) {
         $.logErr(e, resp)
       } finally {
-        resolve(null);
-//        resolve(data);
+        resolve(data);
       }
     })
     await $.wait(2000);
