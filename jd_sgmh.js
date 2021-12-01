@@ -1,4 +1,4 @@
-/*
+﻿/*
 闪购盲盒
 长期活动，一人每天5次助力机会，10次被助机会，被助力一次获得一次抽奖机会，前几次必中京豆
 修改自 @yangtingxiao 抽奖机脚本
@@ -305,7 +305,7 @@ function shareCodesFormat() {
 function readShareCode() {
   console.log(`开始`)
   return new Promise(async resolve => {
-    $.get({url: `http://transfer.nz.lu/sgmh`, timeout: 10000}, (err, resp, data) => {
+    $.get({url: `http://localhost/sgmh`, timeout: 10000}, (err, resp, data) => {
       try {
         if (err) {
           console.log(JSON.stringify(err))
