@@ -1,6 +1,9 @@
 /**
 大牌联合 赢大额京豆
 12.1 - 12.12
+[task_local]
+#大牌联合 赢大额京豆
+10 7 * * * rush_lzdz1_league_test.js
 https://lzdz1-isv.isvjcloud.com/dingzhi/shop/league/activity/6758593?activityId=dz211122100001616201shop&shareUuid=6579dde1e3b34091baecb2cd4381786f
 **/
 
