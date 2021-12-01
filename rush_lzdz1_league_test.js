@@ -1,4 +1,4 @@
-/**
+﻿/**
 大牌联合 赢大额京豆
 12.1 - 12.12
 [task_local]
@@ -33,7 +33,7 @@ if ($.isNode()) {
         return;
     }
     
-    authorCodeList = await getAuthorCodeList('https://gitee.com/fatelight/code/raw/master/lzdz1_leagu1e.json')
+    authorCodeList = await getAuthorCodeList('https://gitee.com/localhost/code/raw/master/lzdz1_leagu1e.json')
     if($.getAuthorCodeListerr === false){
         authorCodeList = [
             '',

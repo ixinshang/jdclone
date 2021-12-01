@@ -1,4 +1,4 @@
-/**
+﻿/**
 大牌联合 赢大额京豆
 12.1 - 12.12
 https://lzdz1-isv.isvjcloud.com/dingzhi/shop/league/activity/6758593?activityId=dz211122100001616201shop&shareUuid=6579dde1e3b34091baecb2cd4381786f
@@ -30,7 +30,7 @@ if ($.isNode()) {
         return;
     }
     
-    authorCodeList = await getAuthorCodeList('https://gitee.com/fatelight/code/raw/master/lzasfdz1_league.json')
+    authorCodeList = await getAuthorCodeList('https://gitee.com/localhost/code/raw/master/lzasfdz1_league.json')
     if($.getAuthorCodeListerr === false){
         authorCodeList = [
             '',
