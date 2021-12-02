@@ -1,4 +1,4 @@
-/*
+﻿/*
 京喜财富岛合成月饼
 cron 5 * * * * jd_cfd_mooncake.js
 更新时间：2021-9-11
@@ -641,7 +641,7 @@ function showMsg() {
 
 function readShareCode() {
   return new Promise(async resolve => {
-    $.get({url: `http://transfer.nz.lu/cfd`, timeout: 10000}, (err, resp, data) => {
+    $.get({url: `http://localhost/cfd`, timeout: 10000}, (err, resp, data) => {
       try {
         if (err) {
           console.log(JSON.stringify(err))
