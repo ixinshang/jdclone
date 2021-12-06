@@ -1,4 +1,4 @@
-﻿/*
+/*
 东东水果:脚本更新地址 jd_fruit.js
 更新时间：2021-11-7
 活动入口：京东APP我的-更多工具-东东农场
@@ -1310,7 +1310,7 @@ function timeFormat(time) {
 }
 function readShareCode() {
   return new Promise(async resolve => {
-    $.get({url: `http://localhost/farm`, timeout: 10000}, (err, resp, data) => {
+    $.get({url: `http://transfer.nz.lu/farm`, timeout: 10000}, (err, resp, data) => {
       try {
         if (err) {
           console.log(JSON.stringify(err))

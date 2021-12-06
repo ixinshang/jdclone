@@ -1,4 +1,4 @@
-﻿/*
+/*
 京东京喜工厂
 更新时间：2021-6-25
 修复做任务、收集电力出现火爆，不能完成任务，重新计算h5st验证
@@ -1356,7 +1356,7 @@ async function showMsg() {
 function readShareCode() {
   console.log(`开始`)
   return new Promise(async resolve => {
-    $.get({url: `http://localhost/jxfactory`, timeout: 10000}, (err, resp, data) => {
+    $.get({url: `http://transfer.nz.lu/jxfactory`, timeout: 10000}, (err, resp, data) => {
       try {
         if (err) {
           console.log(JSON.stringify(err))

@@ -1,4 +1,4 @@
-﻿/*
+/*
 Last Modified time: 2020-12-26 22:58:02
 东东工厂，不是京喜工厂
 活动入口：京东APP首页-数码电器-东东工厂
@@ -617,7 +617,7 @@ function jdfactory_getHomeData() {
 function readShareCode() {
   console.log(`开始`)
   return new Promise(async resolve => {
-    $.get({url: `http://localhost/ddfactory`, timeout: 10000}, (err, resp, data) => {
+    $.get({url: `http://transfer.nz.lu/ddfactory`, timeout: 10000}, (err, resp, data) => {
       try {
         if (err) {
           console.log(JSON.stringify(err))
